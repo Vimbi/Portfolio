@@ -25,6 +25,10 @@
     align-items: center;
 }
 
+.menu-icon-wrapper:hover {
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 .menu-icon {
     position: relative;
     width: 30px;
