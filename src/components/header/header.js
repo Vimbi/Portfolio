@@ -23,7 +23,7 @@ export default class Header extends Component {
     let classMobileNav = 'mobile-nav';
     if (menuIcon) {
       classIcon += ' menu-icon-line-active';
-      classMobileNav += 'mobile-nav--active';
+      classMobileNav += ' mobile-nav--active';
     }
 
     return (
