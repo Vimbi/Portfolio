@@ -19,9 +19,11 @@ export default class Header extends Component {
   render () {
 
     const {menuIcon} = this.state;
-    let classNames = 'menu-icon';
+    let classIcon = 'menu-icon-line';
+    let classMobileNav = 'mobile-nav';
     if (menuIcon) {
-      classNames += ' menu-icon-active';
+      classIcon += ' menu-icon-line-active';
+      classMobileNav += 'mobile-nav--active';
     }
 
     return (
@@ -38,22 +40,47 @@ export default class Header extends Component {
 
         <div className='menu-wrapper'>
 
-          <div className='menu-icon-wrapper'
+          {/* ------ Десктопная навигация ----- */}
+
+            <ul className='nav-list'>
+              <li className='nav-item'>
+                <a href='#' className='nav-link'>Обо мне</a>
+              </li>
+              <li className='nav-item'>
+                <a href='#' className='nav-link'>Работы</a>
+              </li>
+              <li className='nav-item'>
+                <a href='#' className='nav-link'>Контакты</a>
+              </li>
+            </ul>
+
+          {/* ------ Кнопка для мобильной навигации ----- */}
+
+          <div className='menu-icon'
                 onClick={this.onMenuIconClick}>
 
-            <div className={classNames}></div>
+            <div className={classIcon}></div>
                   
           </div>
 
-          <nav className='nav-wrapper'>   
+          {/* --------- Мобильная навигация ---------------- */}
 
-            <ul>
-              <li>Menu 1</li>
-              <li>Menu 2</li>
-              <li>Menu 3</li>
+          <div className={classMobileNav}>
+            <div className='mobile-nav_title'>Навигация</div>
+
+            <ul className='mobile-nav_list'>
+              <li className='mobile-nav_item'>
+                <a href='#' className='mobile-nav_link'>Обо мне</a>
+              </li>
+              <li className='mobile-nav_item'>
+                <a href='#' className='mobile-nav_link'>Работы</a>
+              </li>
+              <li className='mobile-nav_item'>
+                <a href='#' className='mobile-nav_link'>Контакты</a>
+              </li>
             </ul>
 
-          </nav>
+          </div>
 
         </div>
 

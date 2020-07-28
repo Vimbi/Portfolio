@@ -1,42 +1,91 @@
 .header-wrap {
+    overflow: hidden;
+    position: relative;
     width: auto;
     height: auto;
     background: #3CA0D0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2vw;
+    align-items: center;
 }
 
 .header-name {
     text-align: center;
 }
 
+/* ----------- Логотип --------------- */
+
+.logo img {
+    max-width: 100%;
+    display: block;
+}
+
+/* -------------- НАВИГАЦИЯ ------------------*/
+
 .menu-wrapper {
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu-icon-wrapper {
+/* -------------- Навигация для десктопа ------------------*/
+
+.nav-list {
+    display: flex;    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1200px) {
+    .nav-list {
+        display: none;
+    }
+}
+
+.nav-link {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #3808F6;
+}
+
+
+/* --------------Кнопка Бургер меню ------------------*/
+
+.menu-icon {
+    z-index: 19;
+    position: relative;
+    display: none;
     height: 30px;
     width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.menu-icon-wrapper:hover {
+@media (max-width: 1200px) {
+    .menu-icon {        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.menu-icon:hover {
     box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.menu-icon {
+.menu-icon-line {
     position: relative;
     width: 30px;
     height: 5px;
     background-color: floralwhite;
 }
 
-.menu-icon::before {
+.menu-icon-line::before {
     position: absolute;
     content: '';
     display: block;
@@ -47,7 +96,7 @@
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.menu-icon::after {
+.menu-icon-line::after {
     position: absolute;
     content: '';
     display: block;
@@ -58,18 +107,66 @@
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.menu-icon.menu-icon-active {
+.menu-icon-line.menu-icon-line-active {
     background-color: transparent;
 }
 
-.menu-icon.menu-icon-active::before {
+.menu-icon-line.menu-icon-line-active::before {
     transform: rotate(45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-.menu-icon.menu-icon-active::after {
+.menu-icon-line.menu-icon-line-active::after {
     transform: rotate(-45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* -------------- Мобильная навигация ------------------*/
+
+.mobile-nav {
+    z-index: 9;
+    display: block;
+    position: absolute;
+    right: -350px;
+    top: 0;
+    width: 350px;
+    padding: 50px;
+    background-color: rgba(8, 198, 246, 0.5);
+}
+
+.mobile-nav--active {
+    /* transform: translateX(-100%); */
+    /* z-index: 1; */
+}
+
+.mobile-nav_title {
+    font-size: 28px;
+    font-weight: 800;
+    color: floralwhite;
+    margin-bottom: 30px;
+}
+
+.mobile-nav_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mobile-nav_item {
+    margin-bottom: 30px;
+}
+
+.mobile-nav_link {
+    color: floralwhite;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.mobile-nav_link:hover {
+    color: #3808F6;
+    text-decoration: none;
 }
