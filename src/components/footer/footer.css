@@ -1,0 +1,12 @@
+.footer-wrap {
+    height: 30vh;
+    background-color: #3CA0D0;
+}
+
+.row {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}

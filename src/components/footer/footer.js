@@ -6,12 +6,16 @@ export default class Footer extends Component {
 
   render () {
     return (
-      <div>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
+      <div className='footer-wrap'>
+
+        <div className='row'>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </div>
+        
       </div>
     )
   }
