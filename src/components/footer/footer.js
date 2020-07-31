@@ -12,7 +12,7 @@ export default class Footer extends Component {
 
           <div className='primary'>
 
-            <div className='col'>
+            <div className='col1'>
               <strong>Контакты</strong>
               <p>
                 <a href='mailto:vimbi@mail.ru'>vimbi@mail.ru</a>
@@ -23,7 +23,7 @@ export default class Footer extends Component {
               </p>
             </div>
 
-            <div className='col'>
+            <div className='col2'>
               <strong>BRAINDUST NEWSLETTER</strong>
               <form>
                 <div className='form-row'>
@@ -34,9 +34,11 @@ export default class Footer extends Component {
               </form>
             </div>
 
-            <div className='col'>
-              <strong>3</strong>
-              <p>123</p>
+            <div className='col3'>
+              
+              <a className='footer-link' href='https://github.com/Vimbi'><img src={require('../img/github.svg')} alt='Github'></img></a>
+              <a className='footer-link' href='https://codepen.io/vimbi-the-bashful'><img src={require('../img/codepen.png')} alt='Codepen'></img></a>
+              <a className='footer-link' href='https://www.codewars.com/users/Vimbi'><img src={require('../img/codewars.png')} alt='Codewars'></img></a>
             </div>
 
           </div>
