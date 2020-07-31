@@ -4,9 +4,14 @@
 }
 
 .row {
-    padding-bottom: 70px;
-    padding-top: 70px;
-    max-width: 1300px;
+    display: grid;
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
