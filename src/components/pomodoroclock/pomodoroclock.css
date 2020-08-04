@@ -1,0 +1,97 @@
+.container-pomodoro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    background: #008080;
+}
+  
+#title {
+  font-family: 'PLAYBILL', sans-serif;
+  font-size: 500%;
+}
+  
+.time-title {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+  
+#break-label {  
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 15px;
+  font-family: 'PLAYBILL', sans-serif;
+  font-size: 300%;
+}
+  
+#session-label {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 15px;
+  font-family: 'PLAYBILL', sans-serif;
+  font-size: 300%;
+}
+  
+.control-panel {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  font-family: 'PLAYBILL', sans-serif;
+  font-size: 300%;
+}
+  
+.break {
+  display: flex;
+  flex-direction: row;
+  margin-right: 35px;
+}
+  
+.session {
+  display: flex;
+  flex-direction: row;
+  margin-left: 35px;
+}
+  
+#timer-label {
+  margin: 15px;
+  font-family: 'PLAYBILL', sans-serif;
+  font-size: 300%;
+}
+  
+#time-left {
+  margin: 15px;
+  font-family: 'PLAYBILL', sans-serif;
+  font-size: 300%;
+}
+  
+.button-pomodoro {
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 10%;
+}
+
+.button-pomodoro:hover {
+  background-color: white;
+}
+  
+.plus-minus {
+  width: 50px;
+  font-size: 100%;
+  font-family: 'PLAYBILL', sans-serif;
+}
+  
+#reset {
+  font-size: 300%;
+  font-family: 'PLAYBILL', sans-serif;
+}
+  
+#start_stop {
+  font-size: 300%;
+  font-family: 'PLAYBILL', sans-serif;  
+}

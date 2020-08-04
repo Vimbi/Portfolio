@@ -1,30 +1,30 @@
 .container{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 100vh;
-  }
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+}
   
-  #calculator {
-      display: flex;
-      width: 305px;
-      height: 400px;
-      background-color: #666699;
-      flex-direction: column;
-      outline: 1px solid black;
-  }
+#calculator {
+  display: flex;
+  width: 305px;
+  height: 450px;
+  background-color: #666699;
+  flex-direction: column;
+  outline: 1px solid black;
+}
   
   #display{
+    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 275px;
-    height: 40px;
     background-color: white;
     margin: 15px auto;
     padding-right: 10px;
     outline: 1px solid black;
-  }
+ }
   
   /* #keypad {
     display: flex;
@@ -35,29 +35,92 @@
 
 #keypad {
   display: grid;
+  grid-template-areas: 
+  'seven eight nine divide clear'
+  'four five six multipl equal'
+  'one two three minus equal'
+  'zer zer point plus equal';
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  
+  margin: 15px; 
+  height: 360px;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+ grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+ }
+
+#divide {
+ grid-area: divide;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#multiply {
+  grid-area: multipl;
+}
+
+#equals {
+  grid-area: equal;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
 }
   
-#keypad>button {
-    width: 55px;
-    height: 70px;
-    outline: 1px solid black;
+#subtract {
+  grid-area: minus;
+}
+
+#zero {
+  grid-area: zer;
+}
+
+#point {
+  grid-area: point;
+}
+
+#add {
+  grid-area: plus;
+}
+
+#keypad>button {    
     background-color: grey;
     color: white;
-    font-size: 150%;    
-  }
+    font-size: 150%;
+    border-radius: 10%;    
+}
   
-  button:hover {
-    background-color: #6666ff;  
-  }
-  
-  #equals {
-    height: 210px;
-    float: right;
-  }
-  
-  #zero {
-    width: 110px;
-  }
+#keypad>button:hover {
+  background-color: #6666ff;  
+}
