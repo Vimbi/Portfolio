@@ -1,0 +1,15 @@
+.works-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.work-item {
+    display: grid;
+}
+
+.work-link {    
+    justify-self: center;
+}

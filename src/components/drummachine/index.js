@@ -1,3 +1,4 @@
 import Drum from './drummachine';
+import Drummachine from './drummachine';
 
-export default Drum;
+export default Drummachine;

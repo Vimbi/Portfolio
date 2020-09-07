@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 
 import './header.css';
 
@@ -35,7 +36,7 @@ export default class Header extends Component {
         </div>
 
         <div className='header-name'>
-          <h3>Header</h3>
+          <h3><Link to='/'>My Portfolio</Link></h3>
         </div>
 
         <div className='menu-wrapper'>
@@ -44,14 +45,19 @@ export default class Header extends Component {
 
             <ul className='nav-list'>
               <li className='nav-item'>
-                <a href='#' className='nav-link'>Обо мне</a>
+                <Link to='/aboutme' className='nav-link'>Обо мне</Link>                
               </li>
+
               <li className='nav-item'>
-                <a href='#' className='nav-link'>Работы</a>
+                <Link to='/works' className='nav-link'>Работы</Link>
+
+                <ul className='nav-works'>
+                  <li><Link to='/calculator' className='nav-link'>Calculator</Link></li>
+                  <li><Link to='/drummachine' className='nav-link'>Drummachine</Link></li>
+                  <li><Link to='/pomodoroclock' className='nav-link'>Pomodoro Clock</Link></li>
+                </ul>
               </li>
-              <li className='nav-item'>
-                <a href='#' className='nav-link'>Контакты</a>
-              </li>
+              
             </ul>
 
           {/* ------ Кнопка для мобильной навигации ----- */}

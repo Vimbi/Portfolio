@@ -1,0 +1,16 @@
+h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.me-article-wrap {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 2vw;
+    align-items: center;
+    margin: 5px;
+}
+
+.me-foto {
+    border-radius: 50%;
+}

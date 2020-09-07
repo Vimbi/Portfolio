@@ -127,7 +127,7 @@ const arrButtons = [
     }
   }
   
-export default class Drum extends React.Component {
+export default class Drummachine extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
